@@ -105,11 +105,11 @@
            
                 {%if profile%}
                 {%for profile in profile%}
-                <h1 style="color:white">{{profile.editor}} Profile</h1>
-                <img src="{{profile.profile_pic.url}}" alt="profilepic" height="300px;" width="300px;">
-                <h1>Neighborhood: {{profile.hood}}</h1>
-                <h2>Email: {{profile.email}}</h2>
-                <a href="{%url 'updateprofile' %} "><button class="btn btn-warning">Edit profile</button></a>
+                <h1 style="color:white">{{profile.editor}} </h1>
+                <img src="{{profile.profile_pic.url}}" alt="profilepic" height="250px;" width="250px;">
+                <h3>Hood area: {{profile.hood}}</h3>
+                <h3>Email: {{profile.email}}</h3>
+                <a href="{%url 'updateprofile' %} "><button class="btn btn-info">Edit profile</button></a>
                 {%endfor%}
                 {%endif%}
 
