@@ -272,12 +272,14 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading bg-light">
-                  <!-- <h5>{{news.pub_date}}</h5> -->
-                  <h6> by: {{news.editor}}</h6>
+                  
+                 
                   <h4 class="subheading"> {{news.title}}</h4>
+                  <h6> by: {{news.editor}}</h6>
                 </div>
                 <div class="timeline-body bg-light">
                   <p class="text-muted">{{news.description|safe}}</p>
+                  <h6>Posted on: {{news.pub_date}}</h6>
                 </div>
               </div>
             </li>
