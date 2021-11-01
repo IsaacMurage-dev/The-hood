@@ -4,8 +4,7 @@
 Murage Isaac
 
 ## Description
-
-
+This is a web application that enables a user to be in the know about everything that transpires in the neighbourhood. 
 
 
 ## Setup and installations
@@ -38,7 +37,7 @@ Murage Isaac
 * PostgreSQL
 
 ## Deployment
-This is the live link to the project: <a href="">The Hood</a>
+This is the live link to the project: <a href="https://riverdalehood.herokuapp.com/">The Hood</a>
 
 ### License
 This project is under [MIT](https://choosealicense.com/licenses/mit/) &COPY; 2021 All Rights Reserved.
