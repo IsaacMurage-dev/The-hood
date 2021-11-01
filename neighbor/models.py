@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 
@@ -8,7 +9,7 @@ class Neighborhood(models.Model):
     '''
     Class that has details of the neighborhood name, number of occupants and location
     '''
-    hoodpic=models.ImageField(upload_to='images',blank=True)
+    hoodpic=CloudinaryField('images')
     hoodname=models.CharField(max_length=30)
     numberofpeople=models.IntegerField(blank=True,default=0)
     hoodlocation=models.CharField(max_length=30)
@@ -57,7 +58,7 @@ class UserProfile(models.Model):
     '''
     Class for details of an individual occupant in a neighborhood
     '''
-    profile_pic=models.ImageField(upload_to='images/',blank=True)
+    profile_pic=CloudinaryField('images')
     editor=models.OneToOneField(User,on_delete=models.CASCADE)
     hood=models.ForeignKey(Neighborhood,on_delete=models.CASCADE)
     email=models.CharField(max_length=60)
@@ -78,7 +79,7 @@ class Business(models.Model):
     '''
     Class for details of businesses in the neighborhood
     '''
-    businesspic=models.ImageField(upload_to='images/',blank=True)
+    businesspic=CloudinaryField('images')
     businessname=models.CharField(max_length=30)
     editor=models.ForeignKey(User,on_delete=models.CASCADE)
     area=models.ForeignKey(Neighborhood,on_delete=models.CASCADE,null=True)
@@ -134,7 +135,7 @@ class News(models.Model):
     '''
     Class that news posted by members of the neighborhood such as meetings and alerts
     '''
-    newspic=models.ImageField(upload_to='images/',blank=True)
+    newspic=CloudinaryField('images')
     title=models.CharField(max_length=30)
     description=HTMLField()
     newslocation=models.CharField(max_length=30)
