@@ -4,7 +4,7 @@
 Murage Isaac
 
 ## Description
-This is a web application that enables a user to be in the know about everything that transpires in the neighbourhood. 
+This is a web application that enables a user to be in the know about everything that transpires in the neighbourhood. Information ranging from news alerts, businesses and emergency contacts is made available to those living within the particular hood.
 
 
 ## Setup and installations
